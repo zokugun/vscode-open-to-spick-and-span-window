@@ -3,7 +3,7 @@ import pkg from '../package.json';
 import { openFolder } from './commands/open-folder';
 import { pickFolder } from './commands/pick-folder';
 
-const CONFIG_KEY = 'openNewWindow';
+const CONFIG_KEY = 'openInNovelWindow';
 const VERSION_KEY = 'version';
 
 async function showWhatsNewMessage(version: string) { // {{{
@@ -14,7 +14,7 @@ async function showWhatsNewMessage(version: string) { // {{{
 	}];
 
 	const result = await vscode.window.showInformationMessage(
-		`Open to New Window has been updated to v${version} — check out what's new!`,
+		`Open in Novel Window has been updated to v${version} — check out what's new!`,
 		...actions,
 	);
 
@@ -66,8 +66,8 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
 	const disposables: vscode.Disposable[] = [];
 
 	disposables.push(
-		vscode.commands.registerCommand('openNewWindow.openFolder', openFolder),
-		vscode.commands.registerCommand('openNewWindow.pickFolder', pickFolder),
+		vscode.commands.registerCommand('openInNovelWindow.openFolder', openFolder),
+		vscode.commands.registerCommand('openInNovelWindow.pickFolder', pickFolder),
 	);
 
 	context.subscriptions.push(...disposables);

@@ -1,6 +1,6 @@
 {
-	"name": "open-to-new-window",
-	"displayName": "Open to New Window",
+	"name": "open-in-novel-window",
+	"displayName": "Open in Novel Window",
 	"description": "Open a folder in a new window",
 	"version": "0.2.0",
 	"author": {
@@ -9,13 +9,13 @@
 	},
 	"publisher": "zokugun",
 	"license": "MIT",
-	"homepage": "https://github.com/zokugun/vscode-open-to-new-window",
+	"homepage": "https://github.com/zokugun/vscode-open-in-novel-window",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zokugun/vscode-open-to-new-window.git"
+		"url": "https://github.com/zokugun/vscode-open-in-novel-window.git"
 	},
 	"bugs": {
-		"url": "https://github.com/zokugun/vscode-open-to-new-window/issues"
+		"url": "https://github.com/zokugun/vscode-open-in-novel-window/issues"
 	},
 	"engines": {
 		"vscode": "^1.23.0"
@@ -54,8 +54,8 @@
 	},
 	"activationEvents": [
 		"onStartupFinished",
-		"onCommand:openNewWindow.openFolder",
-		"onCommand:openNewWindow.pickFolder"
+		"onCommand:openInNovelWindow.openFolder",
+		"onCommand:openInNovelWindow.pickFolder"
 	],
 	"capabilities": {
 		"virtualWorkspaces": true,
@@ -66,25 +66,25 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "openNewWindow.openFolder",
+				"command": "openInNovelWindow.openFolder",
 				"title": "Open in New Window"
 			},
 			{
-				"command": "openNewWindow.pickFolder",
+				"command": "openInNovelWindow.pickFolder",
 				"title": "Pick Folder",
-				"category": "Open to New Window"
+				"category": "Open in Novel Window"
 			}
 		],
 		"menus": {
 			"explorer/context": [
 				{
-					"command": "openNewWindow.openFolder",
+					"command": "openInNovelWindow.openFolder",
 					"group": "navigation@99"
 				}
 			],
 			"commandPalette": [
 				{
-					"command": "openNewWindow.openFolder",
+					"command": "openInNovelWindow.openFolder",
 					"when": "never"
 				}
 			]
