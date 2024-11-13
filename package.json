@@ -1,0 +1,106 @@
+{
+	"name": "open-in-new-window",
+	"displayName": "Open in New Window",
+	"description": "Open a folder in a new window",
+	"version": "0.1.0",
+	"author": {
+		"name": "Baptiste Augrain",
+		"email": "daiyam@zokugun.org"
+	},
+	"publisher": "zokugun",
+	"license": "MIT",
+	"homepage": "https://github.com/zokugun/vscode-open-in-new-window",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zokugun/vscode-open-in-new-window.git"
+	},
+	"bugs": {
+		"url": "https://github.com/zokugun/vscode-open-in-new-window/issues"
+	},
+	"engines": {
+		"vscode": "^1.23.0"
+	},
+	"main": "./lib/index.js",
+	"browser": "./lib/index.js",
+	"scripts": {
+		"bundle": "ncc build out/extension --out lib",
+		"commit": "cz",
+		"compile": "tsc -p src",
+		"lint": "xo",
+		"package": "rm -f *.vsix && vsce package",
+		"prepare": "husky install; fixpack || true",
+		"release": "release-it",
+		"vscode:prepublish": "npm run compile && npm run bundle",
+		"watch": "tsc-watch -p src --onSuccess 'npm run bundle'"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@commitlint/cli": "^17.0.3",
+		"@commitlint/config-conventional": "^17.0.3",
+		"@types/node": "^16.11.45",
+		"@types/vscode": "^1.23.0",
+		"@vercel/ncc": "^0.34.0",
+		"commitizen": "^4.2.5",
+		"fixpack": "^4.0.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"release-it": "^15.3.0",
+		"tsc-watch": "^5.0.3",
+		"typescript": "^4.2.4",
+		"xo": "^0.48.0"
+	},
+	"overrides": {
+		"eslint": "8.39.0"
+	},
+	"activationEvents": [
+		"onStartupFinished",
+		"onCommand:openNewWindow.openFolder",
+		"onCommand:openNewWindow.pickFolder"
+	],
+	"capabilities": {
+		"virtualWorkspaces": true,
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "openNewWindow.openFolder",
+				"title": "Open in New Window"
+			},
+			{
+				"command": "openNewWindow.pickFolder",
+				"title": "Pick Folder",
+				"category": "Open in New Window"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "openNewWindow.openFolder",
+					"group": "navigation@99"
+				}
+			],
+			"commandPalette": [
+				{
+					"command": "openNewWindow.openFolder",
+					"when": "never"
+				}
+			]
+		}
+	},
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#8DBC00",
+		"theme": "light"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	]
+}
