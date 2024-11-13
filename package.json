@@ -1,6 +1,6 @@
 {
-	"name": "open-in-new-window",
-	"displayName": "Open in New Window",
+	"name": "open-to-new-window",
+	"displayName": "Open to New Window",
 	"description": "Open a folder in a new window",
 	"version": "0.1.0",
 	"author": {
@@ -9,13 +9,13 @@
 	},
 	"publisher": "zokugun",
 	"license": "MIT",
-	"homepage": "https://github.com/zokugun/vscode-open-in-new-window",
+	"homepage": "https://github.com/zokugun/vscode-open-to-new-window",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zokugun/vscode-open-in-new-window.git"
+		"url": "https://github.com/zokugun/vscode-open-to-new-window.git"
 	},
 	"bugs": {
-		"url": "https://github.com/zokugun/vscode-open-in-new-window/issues"
+		"url": "https://github.com/zokugun/vscode-open-to-new-window/issues"
 	},
 	"engines": {
 		"vscode": "^1.23.0"
@@ -72,7 +72,7 @@
 			{
 				"command": "openNewWindow.pickFolder",
 				"title": "Pick Folder",
-				"category": "Open in New Window"
+				"category": "Open to New Window"
 			}
 		],
 		"menus": {

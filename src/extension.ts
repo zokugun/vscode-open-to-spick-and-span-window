@@ -14,7 +14,7 @@ async function showWhatsNewMessage(version: string) { // {{{
 	}];
 
 	const result = await vscode.window.showInformationMessage(
-		`Open in New Window has been updated to v${version} — check out what's new!`,
+		`Open to New Window has been updated to v${version} — check out what's new!`,
 		...actions,
 	);
 
