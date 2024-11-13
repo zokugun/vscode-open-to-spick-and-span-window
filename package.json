@@ -1,6 +1,6 @@
 {
-	"name": "open-in-novel-window",
-	"displayName": "Open in Novel Window",
+	"name": "open-to-spick-and-span-window",
+	"displayName": "Open to Spick and Span Window",
 	"description": "Open a folder in a new window",
 	"version": "0.3.0",
 	"author": {
@@ -9,13 +9,13 @@
 	},
 	"publisher": "zokugun",
 	"license": "MIT",
-	"homepage": "https://github.com/zokugun/vscode-open-in-novel-window",
+	"homepage": "https://github.com/zokugun/vscode-open-to-spick-and-span-window",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zokugun/vscode-open-in-novel-window.git"
+		"url": "https://github.com/zokugun/vscode-open-to-spick-and-span-window.git"
 	},
 	"bugs": {
-		"url": "https://github.com/zokugun/vscode-open-in-novel-window/issues"
+		"url": "https://github.com/zokugun/vscode-open-to-spick-and-span-window/issues"
 	},
 	"engines": {
 		"vscode": "^1.23.0"
@@ -54,8 +54,8 @@
 	},
 	"activationEvents": [
 		"onStartupFinished",
-		"onCommand:openInNovelWindow.openFolder",
-		"onCommand:openInNovelWindow.pickFolder"
+		"onCommand:openSpickSpanWindow.openFolder",
+		"onCommand:openSpickSpanWindow.pickFolder"
 	],
 	"capabilities": {
 		"virtualWorkspaces": true,
@@ -66,25 +66,25 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "openInNovelWindow.openFolder",
+				"command": "openSpickSpanWindow.openFolder",
 				"title": "Open in New Window"
 			},
 			{
-				"command": "openInNovelWindow.pickFolder",
+				"command": "openSpickSpanWindow.pickFolder",
 				"title": "Pick Folder",
-				"category": "Open in Novel Window"
+				"category": "Open in New Window"
 			}
 		],
 		"menus": {
 			"explorer/context": [
 				{
-					"command": "openInNovelWindow.openFolder",
+					"command": "openSpickSpanWindow.openFolder",
 					"group": "navigation@99"
 				}
 			],
 			"commandPalette": [
 				{
-					"command": "openInNovelWindow.openFolder",
+					"command": "openSpickSpanWindow.openFolder",
 					"when": "never"
 				}
 			]

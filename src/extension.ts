@@ -3,7 +3,7 @@ import pkg from '../package.json';
 import { openFolder } from './commands/open-folder';
 import { pickFolder } from './commands/pick-folder';
 
-const CONFIG_KEY = 'openInNovelWindow';
+const CONFIG_KEY = 'openSpickSpanWindow';
 const VERSION_KEY = 'version';
 
 async function showWhatsNewMessage(version: string) { // {{{
@@ -14,7 +14,7 @@ async function showWhatsNewMessage(version: string) { // {{{
 	}];
 
 	const result = await vscode.window.showInformationMessage(
-		`Open in Novel Window has been updated to v${version} — check out what's new!`,
+		`Open to Spick and Span Window has been updated to v${version} — check out what's new!`,
 		...actions,
 	);
 
@@ -66,8 +66,8 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
 	const disposables: vscode.Disposable[] = [];
 
 	disposables.push(
-		vscode.commands.registerCommand('openInNovelWindow.openFolder', openFolder),
-		vscode.commands.registerCommand('openInNovelWindow.pickFolder', pickFolder),
+		vscode.commands.registerCommand('openSpickSpanWindow.openFolder', openFolder),
+		vscode.commands.registerCommand('openSpickSpanWindow.pickFolder', pickFolder),
 	);
 
 	context.subscriptions.push(...disposables);

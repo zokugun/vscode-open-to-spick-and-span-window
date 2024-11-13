@@ -1,20 +1,20 @@
-Open in Novel Window
-================
+Open to Spick and Span Window
+=============================
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/zokugun.open-in-novel-window?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=zokugun.open-in-novel-window)
-[![Open VSX Version](https://img.shields.io/open-vsx/v/zokugun/open-in-novel-window?label=Open%20VSX)](https://open-vsx.org/extension/zokugun/open-in-novel-window)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/zokugun.open-to-spick-and-span-window?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=zokugun.open-to-spick-and-span-window)
+[![Open VSX Version](https://img.shields.io/open-vsx/v/zokugun/open-to-spick-and-span-window?label=Open%20VSX)](https://open-vsx.org/extension/zokugun/open-to-spick-and-span-window)
 [![Donation](https://img.shields.io/badge/donate-ko--fi-green)](https://ko-fi.com/daiyam)
 [![Donation](https://img.shields.io/badge/donate-liberapay-green)](https://liberapay.com/daiyam/donate)
 [![Donation](https://img.shields.io/badge/donate-paypal-green)](https://paypal.me/daiyam99)
 
-With [Open in Novel Window](https://github.com/zokugun/vscode-open-in-novel-window), you can:
+With [Open to Spick and Span Window](https://github.com/zokugun/vscode-open-to-spick-and-span-window), you can:
 - open the selected document in a new window
     - in the explorer or folders pane
     - with the menu `Open in New Window`
 - open a parent of the current document in a new window
     - in the command palette
-    - with the command `> Open in Novel Window: Pick Folder`
+    - with the command `> Open in New Window: Pick Folder`
 
 Donations
 ---------
