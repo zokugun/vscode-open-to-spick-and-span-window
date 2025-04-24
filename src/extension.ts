@@ -1,7 +1,7 @@
 import vscode from 'vscode';
 import pkg from '../package.json';
-import { openFolder } from './commands/open-folder';
-import { pickFolder } from './commands/pick-folder';
+import { openFolder } from './commands/open-folder.js';
+import { pickFolder } from './commands/pick-folder.js';
 
 const CONFIG_KEY = 'openSpickSpanWindow';
 const VERSION_KEY = 'version';
