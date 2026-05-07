@@ -1,9 +1,14 @@
 {
+	"finalNewLine": true,
+	"required": [
+		"dependencies"
+	],
 	"sortToTop": [
 		"name",
 		"displayName",
 		"description",
 		"version",
+		"since",
 		"private",
 		"author",
 		"publisher",
@@ -16,12 +21,15 @@
 		"bin",
 		"exports",
 		"main",
+		"module",
 		"browser",
 		"types",
+		"typesVersions",
 		"scripts",
 		"dependencies",
 		"devDependencies",
 		"optionalDependencies",
+		"peerDependencies",
 		"extensionDependencies",
 		"overrides",
 		"activationEvents",
@@ -31,6 +39,5 @@
 		"galleryBanner",
 		"categories",
 		"keywords"
-	],
-	"finalNewLine": true
+	]
 }
