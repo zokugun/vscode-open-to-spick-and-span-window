@@ -168,7 +168,8 @@
 					"mod": false,
 					"num": false,
 					"pkg": false,
-					"str": false
+					"str": false,
+					"temp": false
 				}
 			}
 		]
