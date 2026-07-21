@@ -59,7 +59,7 @@
 		"taze": "19.14.1",
 		"tsc-watch": "7.2.1",
 		"typescript": "5.9.3",
-		"xo": "0.60.0"
+		"xo": "4.0.0"
 	},
 	"allowScripts": {
 		"@vscode/vsce-sign": true,
